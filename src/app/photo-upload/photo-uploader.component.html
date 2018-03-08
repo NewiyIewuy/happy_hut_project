@@ -1,0 +1,15 @@
+<div id="photo-uploader-cut" class="photo-uploader-cut">
+    <div class="vertical-container" fxLayout="column" fxLayoutAlign="stretch" fxFlex="50%">
+      <div class="content-container" fxLayout="column" fxLayoutAlign="stretch" fxFlex="auto">
+        <!-- <dropzone style="width: 350px;height: 350px;" *ngIf="type === 'component'" class="dropzone-container" [config]="config" [disabled]="disabled" fxLayout="row" fxLayoutAlign="start strech" fxFlex="auto" [message]="'Click or drag images here to upload'" (error)="onUploadError($event)" (success)="onUploadSuccess($event)"></dropzone> -->
+        <!-- <div *ngIf="type === 'directive'" class="dropzone-container" [dropzone]="config" (success)="onUploadSuccess($event)"></div> -->
+        
+        <label class="fileContainer btn btn-lg btn-success">
+            Upload
+            <input type="file" id="uploadBtn" class="action-button" (change)="uploadPhoto($event)">
+        </label>
+        <button  id="resetBtn" style="margin: 20px;" class="action-button btn btn-lg btn-warning" (click)='resetPhoto()'>Reset</button>
+        <button  id="submitBtn" class="action-button btn btn-lg btn-primary" (click)="submitPhoto()">Upload</button>
+      </div>
+    </div>
+</div>

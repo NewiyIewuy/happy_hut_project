@@ -1,0 +1,9 @@
+ <div class="albums-container">
+    <div>
+          <button mat-fab (click)="openUploader()" style="background-color:#5bc0de; font-size:25;margin-left:20px;">+</button>
+    </div>
+     <div class="album-card" *ngFor="let photoSrc of photoSrcs">
+      <img class="photo-card" src="{{photoSrc.url}}"  alt="Photo unloaded">
+    </div>
+ </div>
+

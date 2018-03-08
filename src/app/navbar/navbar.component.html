@@ -1,0 +1,19 @@
+<header>
+    <h1 class="header_first_line">Happy Hut</h1>
+    <!--<h4 class="header_second_line">By Yuwei & Yiwen</h4>-->
+</header>
+<div class="main-wrapper">
+    <!--<tr *ngFor="let album of albums">-->
+    <!--<td>{{album.name}}</td>-->
+    <!--</tr>-->
+    <ul class="navigator" *ngIf="authService.loggedIn()">
+        <li value="" routerLink="/photo" (click)="changeTab($event)">PHOTO</li>
+        <!--   <li value="travle" (click)="changeTab($event)">TRAVEL</li>
+            <li value="secret" (click)="changeTab($event)">SECRET</li> -->
+        <li value="message" routerLink="/message" (click)="changeTab($event)">MESSAGE</li>
+        <li class="right" value="message" (click)="onLogoutClick()">
+            <input type="button" value="LOG OUT" class="btn btn-warning btn-sm">
+        </li>
+        <div class="nav-border" [ngClass]="currentTab"></div>
+    </ul>
+</div>

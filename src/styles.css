@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-image: url(./assets/img/bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+* {
+	font-weight: normal;
+}
+tbody {
+	width: 100%;
+	display: block;
+}

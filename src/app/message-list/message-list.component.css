@@ -1,0 +1,11 @@
+.message-list {
+	background-color: white;
+	margin: 20px;
+	padding: 15px;
+	border-radius: 6px; 
+}
+
+.add-message-btn {
+	float: right;
+	margin-right: 20px;
+}

@@ -1,0 +1,13 @@
+<div class="">
+  <div *ngFor="let message of messages" class="message-list">
+    <div>
+      {{ showDate (message.createdBy) }}  {{message.username}} :
+    </div>
+    <h5>
+      {{ message.content }}
+    </h5>
+    </div> 
+  <a [routerLink]="['/message-create']" class="btn btn-default btn-lg add-message-btn">
+    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+  </a>
+</div>

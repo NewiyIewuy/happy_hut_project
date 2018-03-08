@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <form (ngSubmit)="saveBook()" #bookForm="ngForm">
+        <div class="form-group">
+          <label for="name">By:</label>
+          <input type="text" class="form-control" [(ngModel)]="message.author" name="author" required>
+        </div>
+        <div class="form-group">
+          <label for="name">Title</label>
+          <input type="text" class="form-control" [(ngModel)]="message.title" name="title" required>
+        </div>
+        <div class="form-group">
+          <textarea rows="4" cols="50" type="text" class="form-control" [(ngModel)]="message.context" name="context" required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-success" [disabled]="!messageForm.form.valid">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
